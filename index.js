@@ -76,4 +76,7 @@ resetEl.addEventListener("click", ()=>{
     errorEl.innerText = "";
     errorEl.classList.remove("error");
     resultEl.value = "";
+    operatorEl.forEach((operatorEl) => {
+        operatorEl.classList.remove("active");
+    });
 })
